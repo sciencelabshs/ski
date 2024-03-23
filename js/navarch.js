@@ -127,7 +127,7 @@ let arm_plot;
             }
         }
 
-        download_file("/models/navarch_vertices.dat", function (buffer) {
+        download_file("/ski/models/navarch_vertices.dat", function (buffer) {
             gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
             gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(buffer), gl.STATIC_DRAW);
             gl.bindBuffer(gl.ARRAY_BUFFER, null);
@@ -135,7 +135,7 @@ let arm_plot;
             mark_ready();
         });
 
-        download_file("/models/navarch_indices.dat", function (buffer) {
+        download_file("/ski/models/navarch_indices.dat", function (buffer) {
             gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, index_buffer);
             gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint32Array(buffer), gl.STATIC_DRAW);
             gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
